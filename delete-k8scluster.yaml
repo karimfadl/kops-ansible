@@ -1,0 +1,5 @@
+---
+- name: Create K8s Cluster
+  hosts: all
+  roles:
+    - delete-k8scluster
