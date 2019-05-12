@@ -11,4 +11,3 @@
   hosts: all
   roles:
     - create-k8scluster
-

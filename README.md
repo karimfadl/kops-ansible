@@ -1,1 +1,31 @@
-# kops-ansible
+# vagrant-kops-ansible
+
+This repository contains tooling for deploying Kubernetes cluster in Amazon AWS using the Kops tool by through Ansible Playbook inside Centos 7 Vagrant machine.
+
+
+1. Install Vagrant and VirtualBox in you machine.
+
+https://www.vagrantup.com/downloads.html
+
+https://www.virtualbox.org/wiki/Downloads
+
+
+2. Access your AWS account from console and create The following 
+
+-IAM user with Admin permission "save your secrect key and access key"
+
+-Add "Hosted zone" by Route53 service to add your domain.
+
+
+
+3. Clone The repo to  your Local Machine : https://github.com/karimfadl/vagrant-kops-ansible 
+
+-Enter to the repo and launch the Vagrantfile through this command : vagrant up
+
+-ssh to vagrant machine through this command : "vagrant ssh" 
+
+-Export the AWS credentials whih will be used to authenticate with Amazon AWS:
+export AWS_ACCESS_KEY_ID="XXX"
+export AWS_SECRET_ACCESS_KEY="XXX"
+
+-Back tho the Repo and Run "vagrant provision" to launch Ansible playbook.
