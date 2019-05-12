@@ -20,7 +20,9 @@ https://www.virtualbox.org/wiki/Downloads
 
 3. Clone The repo to  your Local Machine : https://github.com/karimfadl/vagrant-kops-ansible 
 
--Enter to the repo and launch the Vagrantfile through this command : vagrant up
+-Change The following  Vars to match your infrastructure in "group_vars/all" [Access Key - Secret Key - Bucket Name - cluster_name - DNS Zones]
+
+-In repo and launch the Vagrantfile through this command : vagrant up
 
 -ssh to vagrant machine through this command : "vagrant ssh" 
 
