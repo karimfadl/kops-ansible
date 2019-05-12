@@ -8,9 +8,6 @@ Vagrant.configure(2) do |config|
     v.cpus = 1
 end
 
-  config.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: "~/.ssh/id_rsa.pub"
-  config.vm.provision "shell", inline: "cat ~vagrant/.ssh/id_rsa.pub >> ~vagrant/.ssh/authorized_keys"
-
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
     ansible.playbook = "create-k8scluster.yaml"
