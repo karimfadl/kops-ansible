@@ -2,9 +2,9 @@
 #AWS Config
 aws_region: ap-southeast-1	
 
-aws_access_key: AKIAY4SUERQ3GK5X2ZGX
+aws_access_key: xxxxxxxxxxxx
 
-aws_secret_key: flyv96MwxY3t+mDR2XMWJMtPGGOgqGcNLbX2eEPW
+aws_secret_key: xxxxxxxxxxxx
 
 
 #kubectl Config
@@ -18,7 +18,7 @@ kops_download_path: "https://github.com/kubernetes/kops/releases/download/1.11.1
 #Cluster Config
 cluster_name: k8s.karimlabs.com
 
-state_store: s3://kops-karimfadl
+state_store: s3://xxxxxxxxxxxx
 
 aws_zones: ap-southeast-1a
 
