@@ -24,10 +24,4 @@ https://www.virtualbox.org/wiki/Downloads
 
 -In repo and launch the Vagrantfile through this command : vagrant up
 
--ssh to vagrant machine through this command : "vagrant ssh" 
-
--Export the AWS credentials whih will be used to authenticate with Amazon AWS:
-export AWS_ACCESS_KEY_ID="XXX"
-export AWS_SECRET_ACCESS_KEY="XXX"
-
--Back tho the Repo and Run "vagrant provision" to launch Ansible playbook.
+-ssh to vagrant machine through this command : "vagrant ssh"
